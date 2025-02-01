@@ -12,12 +12,9 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({
-    origin: 'https://panel-copy-i795787ac-vamsis-projects-8a33c75a.vercel.app',
-    methods: 'GET,POST,PUT,DELETE',
-    allowedHeaders: 'Content-Type,Authorization'
-  }));
-  app.options('*', cors());
+app.use(cors())
+
+
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI).then(() => {
