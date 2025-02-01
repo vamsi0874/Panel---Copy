@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: 'https://panel-copy-i795787ac-vamsis-projects-8a33c75a.vercel.app',
+    origin: 'https://panel-copy.vercel.app',
     methods: 'GET,POST,PUT,DELETE',
     allowedHeaders: 'Content-Type,Authorization'
   }));
